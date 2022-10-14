@@ -8,7 +8,7 @@ let project = [
     },
     {
         name:"todo-list",
-        tags:["javascript", "react"],
+        tags: "react",
         image: "project2.jpg",
         location: "https://todo-list-tst.herokuapp.com"
         
