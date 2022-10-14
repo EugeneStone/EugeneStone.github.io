@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class = "navbar">
+        <img src="img/img1.png" class="brand" alt="">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="links-container">
+            <li class="links-item"><a href="#" class="link active">home</a></li>
+            <li class="links-item"><a href="#about-section" class="link">about</a></li>
+            <li class="links-item"><a href="#project-section" class="link">project</a></li>           
+            <li class="links-item"><a href="#contact-section" class="link">contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- home section -->
+    <section class="home">
+        <div class="hero-content">
+            <h1 class="hero-heading"><span class="highlight">Hi, </span> i am Eugene</h1>
+            <p class="profession">web developer</p>
+            <p class="info">I create this site as a portfolio to make it easier for you to get to know me and contact me.</p>
+            <a href="#contact-section" class="btn">contact</a>
+        </div>
+        <img src="img/img1.png" class="image" alt="">
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about-section">
+        <h2 class="heading">about<span class="highlight"> me</span></h2>
+        <div class="seperator"></div>
+
+        <div class="about-me-container">
+            <div class="left-col">
+                <img src="img/img2.jpg" class="about-image" alt="">
+            </div>
+            <div class="right-col">
+                <p class="about-para">I'm Evgeny Kaminskiy,  21 у. о.<br><br>I'm graduating from Polotsk State University named after Efrosinya Polotskaya. I study at the Faculty of Information Technology at the Department of Programming Technologies. In my spare time I learn web-development and also improve my level of English.</p>
+                <!-- <a href="#" class="btn">download cv</a> -->
+            </div>
+        </div>
+
+        <h2 class="heading"> languages and framework i know</h2>
+        <div class="seperator"></div>
+        <div class="skill-container">
+            <div class="skill-card" style="--bg: #f06529">-
+                <p class="skill">HTML</p>
+            </div>
+            <div class="skill-card" style="--bg: #379ad6">
+                <p class="skill">CSS</p>
+            </div>
+            <div class="skill-card" style="--bg: #cc6699">
+                <p class="skill">JavaScript</p>
+            </div>
+            <div class="skill-card" style="--bg: #f7df1e">
+                <p class="skill">React</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- project section -->
+    <section class="project" id="project-section">
+        <h2 class="heading">Project<span class="highlight">s</span></h2>
+        <p class="sub-heading">Here are my projects. You can see their implementation on my <a href="https://github.com/EugeneStone" class="github-link">GitHub</a></p>
+        <div class="seperator"></div>
+
+        <div class="filters">
+            <button class="filter-btn active" id="all">all</button>
+            <button class="filter-btn" id="javascript">javaScript</button>
+            <button class="filter-btn" id="react">ReactJS</button>
+        </div>
+
+        <div class="project-container">
+        </div>
+
+    </section>
+
+    <!-- contact form -->
+    <section class="contact" id="contact-section">
+        <h2 class="heading">Contact<span class="highlight"> me</span></h2>
+        <p class="sub-heading">Сomplete the form to contact me.</p>
+        <div class="seperator"></div>
+
+        <div class="contact-form">
+            <div class="name">
+                <input type="text" class="first-name" required placeholder="first name">
+                <input type="text" class="last-name" required placeholder="last name">
+            </div>
+            <input type="email" required class="email" placeholder="your email">
+            <textarea class="message" placeholder="message" required></textarea>
+            <button class="btn contact-btn">contact</button>
+        </div>
+    </section>
+
+    <footer class="footer">made with love</footer>
+
+    <script src="project.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
